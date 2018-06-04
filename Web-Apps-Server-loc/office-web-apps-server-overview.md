@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visão geral do Servidor do Office Web Apps
 TOCTitle: 'Visão geral: Servidor do Office Web Apps'
 ms:assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
