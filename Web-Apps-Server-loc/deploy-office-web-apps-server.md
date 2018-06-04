@@ -1,4 +1,4 @@
-﻿---
+---
 title: Implantar o Servidor do Office Web Apps
 TOCTitle: Implantar o Servidor do Office Web Apps
 ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
@@ -417,9 +417,12 @@ Se recursos do .NET Framework 3.5 forem instalados e depois removidos, você pod
 
 **Para o Windows Server 2008 R2**
 
+```
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-
+```
+```
     iisreset /restart /noforce
+```
 
 **Para o Windows Server 2012 ou Windows Server 2012 R2**
 
