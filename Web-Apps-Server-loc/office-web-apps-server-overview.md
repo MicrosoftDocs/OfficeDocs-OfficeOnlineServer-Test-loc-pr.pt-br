@@ -136,5 +136,5 @@ O Servidor do Office Web Apps fornece uma página no endereço http://*Nomedoser
 [Implantar o Servidor do Office Web Apps](deploy-office-web-apps-server.md)  
   
 
-[deploy-office-web-apps-server.md](deploy-office-web-apps-server.md)
+[https://technet.microsoft.com/pt-br/library/jj219455](deploy-office-web-apps-server.md)
 
