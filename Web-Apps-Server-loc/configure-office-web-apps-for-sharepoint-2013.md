@@ -133,7 +133,7 @@ Se este etapa falhar, consulte Solução de erros no Office Web Apps.
 
 ## Em um ambiente de produção que usa HTTPS
 
-Antes de iniciar os seguintes procedimentos, verifique se você configurou o Servidor do Office Web Apps seguindo as etapas em [Implantar um farm do Servidores do Office Web Apps em um único servidor que usa HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#singlehttps) ou [Implantar um farm de Servidores do Office Web Apps com balanceamento de carga e vários servidores que usa HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#multihttps).
+Antes de iniciar os seguintes procedimentos, verifique se você configurou o Servidor do Office Web Apps seguindo as etapas em [Implantar um farm do Servidores do Office Web Apps em um único servidor que usa HTTPS](deploy-office-web-apps-server#implantar-um-farm-de-servidor-único-do-servidor-do-office-web-apps-que-usa-https) ou [Implantar um farm de Servidores do Office Web Apps com balanceamento de carga e vários servidores que usa HTTPS](deploy-office-web-apps-server#implantar-um-farm-com-múltiplos-servidores-e-carga-equilibrada-do-servidor-do-office-web-apps-que-usa-https).
 
 ## Etapa 1: abra o Shell de Gerenciamento do SharePoint 2013
 
