@@ -46,7 +46,7 @@ Para obter detalhes precisos sobre sua licença, consulte os Termos de Licença 
 
 O SharePoint 2013 oferece novas aplicações de licença que funcionam com o Office Web Apps. Se habilitar o licenciamento do SharePoint e, depois, habilitar a edição do Office Web Apps, somente os usuários que têm as licenças apropriadas poderão realmente editar os arquivos do Office em um navegador. Se nenhuma licença de edição do Office Web Apps for aplicada para os usuários, apenas a exibição é possível.
 
-Para obter mais informações sobre como funciona o licenciamento do SharePoint 2013, consulte [Configurar o licenciamento no SharePoint Server 2013](https://technet.microsoft.com/pt-br/library/jj219627\(v=office.15\)). O parâmetro EditingEnabled que possibilita a edição está descrito em [New-OfficeWebAppsFarm](new-officewebappsfarm.md) e em [Set-OfficeWebAppsFarm](set-officewebappsfarm.md).
+Para obter mais informações sobre como funciona o licenciamento do SharePoint 2013, consulte [Configurar o licenciamento no SharePoint Server 2013](https://technet.microsoft.com/pt-br/library/jj219627\(v=office.15\)). O parâmetro EditingEnabled que possibilita a edição está descrito em [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) e em [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 Arquivos enviados pelo Compartilhamento pelo recurso de link no SharePoint 2013 podem ser editados no Office Web Apps mesmo quando nenhuma licença de edição estiver presente e quando a edição estiver desabilitada para o farm do Servidor do Office Web Apps.
 
@@ -54,7 +54,7 @@ Arquivos enviados pelo Compartilhamento pelo recurso de link no SharePoint 2013 
 
 O Servidor do Office Web Appsfornece Visualizadores Móveis do Office para disponibilizar o Office Web Apps para usuários móveis que acessam sites do SharePoint Server. Por padrão, os Visualizadores Móveis do Office estão habilitados, mas não podem ser desativados pelo administrador do site do SharePoint Server. Os usuários quando habilitados podem navegar pelo site do SharePoint Server usando o navegador em seus dispositivos móveis, tocar no documento que desejam abrir na biblioteca do SharePoint Server e o documento será aberto no navegador móvel. .
 
-Saiba mais sobre como usar dispositivos móveis em [Novidades em dispositivos móveis no SharePoint 2013](https://technet.microsoft.com/pt-br/library/fp161352\(v=office.15\)) and [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/pt-br/library/fp161351\(v=office.15\)). Para saber mais sobre como usar os Visualizadores Móveis do Office em seu dispositivo móvel, consulte [Usar os Office Web Apps no Android, iPhone ou Windows Phone](http://go.microsoft.com/fwlink/p/?linkid=271045).Se você optar por desativar os Visualizadores Móveis do Office noSharePoint 2013, use o cmdlet [Remove-SPWOPIBinding](remove-spwopibinding.md).
+Saiba mais sobre como usar dispositivos móveis em [Novidades em dispositivos móveis no SharePoint 2013](https://technet.microsoft.com/pt-br/library/fp161352\(v=office.15\)) and [Overview of mobile devices and SharePoint Server 2013](https://technet.microsoft.com/pt-br/library/fp161351\(v=office.15\)). Para saber mais sobre como usar os Visualizadores Móveis do Office em seu dispositivo móvel, consulte [Usar os Office Web Apps no Android, iPhone ou Windows Phone](http://go.microsoft.com/fwlink/p/?linkid=271045).Se você optar por desativar os Visualizadores Móveis do Office noSharePoint 2013, use o cmdlet [Remove-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps).
 
 ## Diferenças entre o Excel Web App e os Serviços do Excel no SharePoint
 
@@ -64,7 +64,7 @@ Porém, existem determinadas diferenças entre oExcel Web App e o Excel Services
 
 . Para obter detalhes sobre as diferenças entre o Excel Web App e o Excel Services, consulte [Visão geral do Excel Services no SharePoint Server 2013](https://technet.microsoft.com/pt-br/library/ee424405\(v=office.15\)) e [Comparando os Serviços do Excel no SharePoint com o Excel Web App](http://go.microsoft.com/fwlink/p/?linkid=255460).
 
-Se sua organização decidir usar o Excel Services em vez do Excel Web App para exibir pastas de trabalho no navegador, você poderá usar o cmdlet Windows PowerShell **New-SPWOPISuppressionSettings** para desativar o Excel Web App para pastas de trabalho do Excel. Para obter mais informações, consulte [New-SPWOPISuppressionSetting](new-spwopisuppressionsetting.md).
+Se sua organização decidir usar o Excel Services em vez do Excel Web App para exibir pastas de trabalho no navegador, você poderá usar o cmdlet Windows PowerShell **New-SPWOPISuppressionSettings** para desativar o Excel Web App para pastas de trabalho do Excel. Para obter mais informações, consulte [New-SPWOPISuppressionSetting](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps).
 
 ## Consulte também
 

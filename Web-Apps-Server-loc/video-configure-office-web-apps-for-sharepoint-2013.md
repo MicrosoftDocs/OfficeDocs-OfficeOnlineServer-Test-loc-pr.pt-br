@@ -32,15 +32,15 @@ Este vídeo abrange os procedimentos realizados em dois servidores: o servidor q
 
 1\. Abra o prompt de comando do Windows PowerShell e instale as funções e serviços necessários para o Servidor do Office Web Apps. Consulte [Prepare servers to run Office Web Apps Server](deploy-office-web-apps-server.md). Isso é necessário porque o Servidor do Office Web Apps não será instalado caso estejam faltando as funções e serviços necessários.  
 2\. Instale o software do Servidor do Office Web Apps a partir do [Centro de Serviços de Licenciamento por Volume (VLSC)](http://go.microsoft.com/fwlink/p/?linkid=256561). Você deverá ter um contrato de Licenciamento por Volume para baixar o Servidor do Office Web Apps para Office Professional Plus 2013, Office Standard 2013, ou Office para Mac 2011. O download está localizado abaixo dos produtos do Office no portal do VLSC.  
-3\. Crie o farm do Servidor do Office Web Apps usando o [New-OfficeWebAppsFarm](new-officewebappsfarm.md).  
+3\. Crie o farm do Servidor do Office Web Apps usando o [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).  
 4\. Verifique se o farm do Servidor do Office Web Apps foi criado com êxito abrindo uma janela de navegador e acessando http://*ServerName*/hosting/discovery.
 
 **No servidor que executa o SharePoint 2013, o vídeo ensina como:**
 
 5\. Abrir o Shell de Gerenciamento do SharePoint 2013.  
-6\. Criar a associação entre o Servidor do Office Web Apps e o SharePoint 2013 utilizando o [New-SPWOPIBinding](new-spwopibinding.md). Isto estabelece uma comunicação entre o servidor que executa o SharePoint 2013 e o servidor que executa o Servidor do Office Web Apps.  
-7\. Exibir a zona WOPI do SharePoint 2013 utilizando [Get-SPWOPIZone](get-spwopizone.md). Esta etapa destaca o fato de que dois servidores estão utilizando zonas WOPI diferentes: SharePoint 2013 está usando o https interno, e o Servidor do Office Web Apps está usando o http interno. A zona precisa corresponder ao Office Web Apps para funcionar corretamente.  
-8\. Alterar a zona WOPI para o SharePoint 2013 utilizando [Set-SPWOPIZone](set-spwopizone.md) para alterar a zona WOPI para o http interno.  
+6\. Criar a associação entre o Servidor do Office Web Apps e o SharePoint 2013 utilizando o [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps). Isto estabelece uma comunicação entre o servidor que executa o SharePoint 2013 e o servidor que executa o Servidor do Office Web Apps.  
+7\. Exibir a zona WOPI do SharePoint 2013 utilizando [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps). Esta etapa destaca o fato de que dois servidores estão utilizando zonas WOPI diferentes: SharePoint 2013 está usando o https interno, e o Servidor do Office Web Apps está usando o http interno. A zona precisa corresponder ao Office Web Apps para funcionar corretamente.  
+8\. Alterar a zona WOPI para o SharePoint 2013 utilizando [Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps) para alterar a zona WOPI para o http interno.  
 9\. Verificar se o Office Web Apps está funcionando ao abrir um documento do Office em uma biblioteca de documentos do SharePoint 2013 .
 
 Para obter mais detalhes sobre cada uma dessas etapas, consulte as seções a seguir nos artigos [Implantar o Servidor do Office Web Apps](deploy-office-web-apps-server.md) e [Configurar o Office Web Apps para o SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md).

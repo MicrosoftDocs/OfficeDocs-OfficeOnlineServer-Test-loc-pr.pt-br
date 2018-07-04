@@ -242,7 +242,7 @@ Use o comando **New-OfficeWebAppsFarm** para criar um novo farm Servidor do Offi
 
   - **–EditingEnabled** permite a edição no Office Web Apps quando usado com o SharePoint 2013. Esse parâmetro: não é usado pelo Lync Server 2013 porque esse host não oferece suporte para edição.
 
-Parâmetros adicionais que configuram serviços de tradução, servidores de proxy, suporte a ClipArt e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Parâmetros adicionais que configuram serviços de tradução, servidores de proxy, suporte a ClipArt e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Se você vir as mensagens "500 Exceções de Serviços da Web" ou "500.21 - Erro Interno do Servidor"
 
@@ -293,7 +293,7 @@ Use o comando **New-OfficeWebAppsFarm** para criar um novo farm Servidor do Offi
 
   - **–EditingEnabled** é opcional e permite a edição no Office Web Apps quando usado com o SharePoint 2013. Esse parâmetro: não é usado pelo Lync Server 2013 porque esse host não oferece suporte para edição.
 
-Parâmetros adicionais que configuram serviços de tradução, servidores de proxy, suporte a ClipArt e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Parâmetros adicionais que configuram serviços de tradução, servidores de proxy, suporte a ClipArt e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Se você vir as mensagens "500 Exceções de Serviços da Web" ou "500.21 - Erro Interno do Servidor"
 
@@ -366,7 +366,7 @@ Use o comando **New-OfficeWebAppsFarm** para criar um novo farm do Servidor do O
 
   - **–EditingEnabled** é opcional e permite a edição no Office Web Apps quando usado com o SharePoint 2013. Esse parâmetro: não é usado pelo Lync Server 2013 porque esse host não oferece suporte para edição.
 
-Outros parâmetros que configuram serviços de tradução, servidores de proxy, suporte a ClipArt e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Outros parâmetros que configuram serviços de tradução, servidores de proxy, suporte a ClipArt e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Se você vir as mensagens "500 Exceções de Serviços da Web" ou "500.21 - Erro Interno do Servidor"
 
@@ -376,7 +376,7 @@ Depois que o primeiro servidor estiver executando o Servidor do Office Web Apps,
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-Deseja mais informações sobre esses parâmetros? Encontre-os no [New-OfficeWebAppsMachine](new-officewebappsmachine.md).
+Deseja mais informações sobre esses parâmetros? Encontre-os no [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
 ## Etapa 3: verificar se o farm do Servidor do Office Web Apps foi criado com êxito
 
@@ -428,8 +428,8 @@ Se recursos do .NET Framework 3.5 forem instalados e depois removidos, você pod
 ## Consulte também
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Mapa de conteúdo para o Servidor do Office Web Apps](content-roadmap-for-office-web-apps-server.md)  

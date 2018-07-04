@@ -39,7 +39,7 @@ _**Tópico modificado em:**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-server.md">Windows PowerShell para Office Web Apps Server</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell para Office Web Apps Server</a></p></td>
 <td><p>Lista os cmdlets do Windows PowerShell para Servidor do Office Web Apps.</p></td>
 </tr>
 </tbody>
