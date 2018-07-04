@@ -36,7 +36,6 @@
       href: technical-reference-for-office-web-apps-with-sharepoint-2013.md
       items:
       - name: Windows PowerShell para Office Web Apps
-        href: windows-powershell-for-office-web-apps-sharepoint-2013.md
-        items: https://docs.microsoft.com/pt-br/powershell/module/sharepoint-server/?view=sharepoint-ps
+        href: https://docs.microsoft.com/pt-br/powershell/module/sharepoint-server/?view=sharepoint-ps
   - name: Aplicar atualizações de software ao Servidor do Office Web Apps
     href: apply-software-updates-to-office-web-apps-server.md
