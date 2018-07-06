@@ -1,4 +1,4 @@
-﻿---
+---
 title: Visão geral do Servidor do Office Web Apps
 TOCTitle: 'Visão geral: Servidor do Office Web Apps'
 ms:assetid: 4b199a88-387f-4121-820d-7af580e2a3e8
@@ -136,5 +136,5 @@ O Servidor do Office Web Apps fornece uma página no endereço http://*Nomedoser
 [Implantar o Servidor do Office Web Apps](deploy-office-web-apps-server.md)  
   
 
-[deploy-office-web-apps-server.md](deploy-office-web-apps-server.md)
+[https://technet.microsoft.com/pt-br/library/jj219455](deploy-office-web-apps-server.md)
 
