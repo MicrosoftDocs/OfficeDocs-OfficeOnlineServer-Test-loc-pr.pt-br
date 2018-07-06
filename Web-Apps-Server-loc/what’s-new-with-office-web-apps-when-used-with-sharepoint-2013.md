@@ -1,5 +1,5 @@
 ﻿---
-title: O que há de novo em relação ao Office Web Apps quando utilizado com o SharePoint 2013?
+title: Office Web Apps quando utilizado com o SharePoint 2013
 TOCTitle: O que há de novo em relação ao Office Web Apps quando utilizado com o SharePoint 2013?
 ms:assetid: fc26f45c-fdd2-45be-a924-c8a1c0a5924c
 ms:mtpsurl: https://technet.microsoft.com/pt-br/library/Dn455087(v=office.15)
