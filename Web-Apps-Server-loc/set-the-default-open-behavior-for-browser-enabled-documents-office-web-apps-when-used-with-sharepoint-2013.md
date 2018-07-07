@@ -1,5 +1,5 @@
 ﻿---
-title: Definir o comportamento padrão de abertura para documentos habilitados para navegadores (Office Web Apps quando usados com o SharePoint 2013)
+title: Comportamento padrão de abertura para documentos (Office Web Apps)
 TOCTitle: Definir o comportamento padrão de abertura para documentos habilitados para navegadores
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/pt-br/library/Ee837425(v=office.15)
