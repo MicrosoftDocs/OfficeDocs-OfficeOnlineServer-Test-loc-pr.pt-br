@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Definir o comportamento padrão de abertura para documentos habilitados para navegadores (Office Web Apps quando usados com o SharePoint 2013)
+# Definir o comportamento padrão de abertura para documentos habilitados para navegadores (Office Web Apps quando usados com o SharePoint 2013) 
 
- 
+**Aplica-se a:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Aplica-se a:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Tópico modificado em:**2016-12-16_
+**Tópico modificado em:** 2016-12-16
 
 **Resumo:** explica como configurar o comportamento de abertura padrão de documentos do Office nos conjuntos de sites e bibliotecas de documentos do SharePoint.
 
@@ -139,23 +137,30 @@ Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no Sh
     
       - Para habilitar o recurso OpenInClient para um conjunto de sites específico (para abrir documentos no aplicativo cliente), digite este comando:
         
+        ```PowerShell
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+        ```
+        ```
         onde *\<SiteCollURL\>* é a URL do conjunto de sites.
-    
+        ```    
       - Para habilitar o recurso OpenInClient para todos os conjuntos de sites (para abrir documentos no aplicativo cliente), digite este comando:
-        
+
+        ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
-    
+        ```
       - Para desabilitar o recurso OpenInClient para um conjunto de sites específico (para abrir documentos no navegador), digite este comando:
-        
+
+        ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+        ```
+        ```  
         onde *\<SiteCollURL\>* é a URL do conjunto de sites.
-    
+        ```    
       - Para desabilitar o recurso OpenInClient para todos os conjuntos de sites (para abrir documentos no navegador), digite este comando:
-        
+      
+        ```PowerShell
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+        ```
 
  **Definir o comportamento de abertura padrão para uma biblioteca de documentos usando a página de configurações de biblioteca de documentos**
 
@@ -222,8 +227,10 @@ Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no Sh
     3.  Na barra de aplicativos, selecione **Executar como administrador**.
 
 3.  No prompt de comando do Windows PowerShell, digite este comando:
-    
+      
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
+      ```
     
     no qual:
     
