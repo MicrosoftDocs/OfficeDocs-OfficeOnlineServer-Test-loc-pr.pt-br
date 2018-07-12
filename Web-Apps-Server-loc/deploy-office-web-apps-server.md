@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Implantar o Servidor do Office Web Apps
+# Implantar o Servidor do Office Web Apps 
 
- 
+**Aplica-se a:** Office Web Apps Server
 
-_**Aplica-se a:**Office Web Apps Server_
-
-_**Tópico modificado em:**2017-10-05_
+**Tópico modificado em:** 2017-10-05
 
 **Resumo:** explica como implantar o Servidor do Office Web Apps no local para uso pelo SharePoint 2013 e pelo Lync Server 2013.
 
@@ -93,11 +91,15 @@ O Windows Server 2008 R2, o Windows Server 2012 e o Windows Server 2012 R2 tê
 
 2.  Abra o prompt do Windows PowerShell como administrador e execute esses comandos para instalar as funções e serviços necessários.
     
+    ```PowerShell
         Import-Module ServerManager
+    ```
     
     Em seguida, execute este comando:
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+    ```
     
     Se solicitado, reinicie o servidor.
 
@@ -105,7 +107,9 @@ O Windows Server 2008 R2, o Windows Server 2012 e o Windows Server 2012 R2 tê
 
 1.  Abra o prompt do Windows PowerShell como administrador e execute este comando para instalar as funções e serviços necessários.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     Se solicitado, reinicie o servidor.
 
@@ -117,7 +121,9 @@ O Windows Server 2008 R2, o Windows Server 2012 e o Windows Server 2012 R2 tê
 
 2.  Abra o prompt do Windows PowerShell como administrador e execute este comando para instalar as funções e serviços necessários.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     Se solicitado, reinicie o servidor.
 
@@ -232,7 +238,9 @@ Você pode usar este farm do Servidor do Office Web Apps para fornecer a funcion
 
 Use o comando **New-OfficeWebAppsFarm** para criar um novo farm Servidor do Office Web Apps que consiste em um único servidor, como mostrado no exemplo a seguir.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **Parâmetros**
 
@@ -250,10 +258,13 @@ Se você vir as mensagens "500 Exceções de Serviços da Web" ou "500.21 - Erro
 
 Depois da criação da farm, seus detalhes são exibidos no prompt do Windows PowerShell. Para verificar se o Servidor do Office Web Apps foi instalado e configurado corretamente, use um navegador Web para acessar a URL de descoberta do Servidor do Office Web Apps, conforme mostrado no exemplo a seguir. A URL de descoberta é o parâmetro *InternalUrl* especificado ao configurar a farm do Servidor do Office Web Apps, seguido de **/hosting/discovery**, por exemplo:
 
+```
     http://servername/hosting/discovery
+```
 
 Se o Servidor do Office Web Apps estiver funcionando corretamente, deve haver um arquivo XML de descoberta WOPI no navegador Web. As primeiras linhas do arquivo devem se parecer com o seguinte.
 
+```XML
     <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
@@ -262,6 +273,7 @@ Se o Servidor do Office Web Apps estiver funcionando corretamente, deve haver um
     <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+```
 
 ## Etapa 3: configurar o host
 
@@ -282,7 +294,9 @@ Este farm do Servidor do Office Web Apps fornecerá a funcionalidade do Office W
 
 Use o comando **New-OfficeWebAppsFarm** para criar um novo farm Servidor do Office Web Apps que consiste em um único servidor, como mostrado no exemplo a seguir.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Parâmetros**
 
@@ -302,11 +316,13 @@ Se você vir as mensagens "500 Exceções de Serviços da Web" ou "500.21 - Erro
 
 Depois da criação da farm, seus detalhes são exibidos no prompt do Windows PowerShell. Para verificar se o Servidor do Office Web Apps foi instalado e configurado corretamente, use um navegador Web para acessar a URL de descoberta do Servidor do Office Web Apps, conforme mostrado no exemplo a seguir. A URL de descoberta é o parâmetro *InternalUrl* especificado ao configurar a farm do Servidor do Office Web Apps, seguido de **/hosting/discovery**, por exemplo:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Se o Servidor do Office Web Apps funcionar conforme o esperado, você deverá ver um arquivo XML de descoberta do WOPI (Interface de Plataforma Aberta de aplicativo Web) em seu navegador da web. As primeiras linhas desse arquivo devem se parecer com o exemplo a seguir:
 
-``` 
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -315,8 +331,7 @@ name="view"
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
 default="true" ext="ods"/><action name="view" 
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
-default="true" ext="xls"/><action name="view"
- 
+default="true" ext="xls"/><action name="view" 
 ```
 
 <table>
@@ -356,7 +371,9 @@ Antes de começar, verifique se o balanceador de carga está configurado conform
 
 Use o comando **New-OfficeWebAppsFarm** para criar um novo farm do Servidor do Office Web Apps no primeiro servidor, conforme mostrado no exemplo a seguir.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Parâmetros**
 
@@ -376,7 +393,9 @@ Se você vir as mensagens "500 Exceções de Serviços da Web" ou "500.21 - Erro
 
 Depois que o primeiro servidor estiver executando o Servidor do Office Web Apps, execute o comando **New-OfficeWebAppsMachine** em cada servidor que deseja adicionar à farm do Servidor do Office Web Apps. Para o parãmetro **–MachineToJoin**, use o nome do computador de um servidor que já está na farm do Servidor do Office Web Apps. Por exemplo, se servidor1.contoso.com já estiver na farm, use o seguinte:
 
+```PowerShell
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 Deseja mais informações sobre esses parâmetros? Encontre-os no [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
@@ -384,12 +403,16 @@ Deseja mais informações sobre esses parâmetros? Encontre-os no [New-OfficeWeb
 
 Depois da criação da farm, seus detalhes são exibidos no prompt do Windows PowerShell. Para verificar se o Servidor do Office Web Apps foi instalado e configurado corretamente, use um navegador Web para acessar a URL de descoberta do Servidor do Office Web Apps, conforme mostrado no exemplo a seguir. A URL de descoberta é o parâmetro *InternalUrl* especificado ao configurar a farm do Servidor do Office Web Apps, seguido de **/hosting/discovery**, por exemplo:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Se o Servidor do Office Web Apps funcionar conforme o esperado, você deverá ver um arquivo XML de descoberta do WOPI (Interface de Plataforma Aberta de aplicativo Web) em seu navegador da web. As primeiras linhas desse arquivo devem se parecer com o exemplo a seguir:
 
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+```
 
 <table>
 <thead>
@@ -403,7 +426,6 @@ Se o Servidor do Office Web Apps funcionar conforme o esperado, você deverá ve
 </tr>
 </tbody>
 </table>
-
 
 ## Etapa 4: configurar o host
 
@@ -419,16 +441,17 @@ Se recursos do .NET Framework 3.5 forem instalados e depois removidos, você pod
 
 **Para o Windows Server 2008 R2**
 
-```
+```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-```
-```
+
     iisreset /restart /noforce
 ```
 
 **Para o Windows Server 2012 ou Windows Server 2012 R2**
 
+```PowerShell
     dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## Consulte também
 

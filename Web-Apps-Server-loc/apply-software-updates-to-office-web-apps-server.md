@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Aplicar atualizações de software ao Servidor do Office Web Apps
+# Aplicar atualizações de software ao Servidor do Office Web Apps 
 
- 
+**Aplica-se a:** Office Web Apps Server
 
-_**Aplica-se a:**Office Web Apps Server_
-
-_**Tópico modificado em:**2016-12-16_
+**Tópico modificado em:** 2016-12-16
 
 **Resumo:** explica como aplicar atualizações de software a um farm do Office Web Apps Server.
 
@@ -37,12 +35,8 @@ Depois do lançamento de uma nova versão do Servidor do Office Web Apps, a Micr
 </tbody>
 </table>
 
-
-
 > [!WARNING]
 > A aplicação de atualizações do Servidor do Office Web Apps usando o processo de atualizações automáticas não é compatível com o Servidor do Office Web Apps por que as atualizações do Servidor do Office Web Apps devem ser aplicadas de forma específica, conforme descrito neste artigo. Se as atualizações do Servidor do Office Web Apps forem aplicadas automaticamente, os usuários poderão não conseguir exibir ou editar documentos no Office Web Apps. Caso isto ocorra, é necessário reestruturar seu farm do Servidor do Office Web Apps. Para reestruturar um farm, é necessário remover o Servidor do Office Web Apps do farm usando o <A href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</A>, desinstalar o Servidor do Office Web Apps por meio do Adicionar ou remover programas, para depois reinstalar o Servidor do Office Web Apps seguindo as etapas descritas no <A href="deploy-office-web-apps-server.md">Implantar o Servidor do Office Web Apps</A>. Depois de reinstalá-lo, aplique a atualização seguindo os passos descritos neste artigo.<BR>É importante ler com atenção as diretrizes constantes em <A href="plan-office-web-apps-server.md">Planejamento de atualizações para o Office Web Apps Server</A> para estabelecer um processo de atualização para o farm do Servidor do Office Web Apps.
-
-
 
 ## Antes de iniciar
 
@@ -72,7 +66,6 @@ Como parte do processo de atualização, será necessário recriar o farm do Ser
 </tbody>
 </table>
 
-
 ## Aplicação de atualizações de software a um farm do Office Web Apps Server com um único servidor
 
 Para aplicar atualizações de software a um farm do Servidor do Office Web Apps com um único servidor, remova o Servidor do Office Web Apps do farm, aplique a atualização de software e recrie o farm Servidor do Office Web Apps. Caso você tenha apenas um servidor em seu farm do Servidor do Office Web Apps, os usuários não conseguirão usar o Office Web Apps durante a atualização do servidor. Por isso, considere atualizar o Servidor do Office Web Apps fora do expediente ou fora de horários críticos de uso do servidor.
@@ -83,7 +76,9 @@ Para aplicar atualizações de software a um farm do Servidor do Office Web Apps
 
 2.  No Servidor do Office Web Apps em que deve ser aplicada a atualização de software, abra o prompt Windows PowerShell como um administrador e execute o seguinte comando.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 3.  Instale a atualização do Servidor do Office Web Apps no servidor. Se solicitado, reinicie o servidor.
 
@@ -91,7 +86,9 @@ Para aplicar atualizações de software a um farm do Servidor do Office Web Apps
     
     O código no exemplo a seguir cria um novo farm do Servidor do Office Web Apps chamado http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
     Parâmetros adicionais que configuram serviços de tradução, servidores de proxy, suporte a clip-art e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
@@ -107,7 +104,9 @@ Para aplicar atualizações de software a um farm do Servidor do Office Web Apps
 
 3.  No Servidor do Office Web Apps removido, abra o prompt do Windows PowerShell como administrador e execute o seguinte comando.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 4.  Instale a atualização do Servidor do Office Web Apps no servidor. Se solicitado, reinicie o servidor.
 
@@ -115,7 +114,9 @@ Para aplicar atualizações de software a um farm do Servidor do Office Web Apps
     
     O código no exemplo a seguir cria um novo farm do Servidor do Office Web Apps chamado http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
     Parâmetros adicionais que configuram serviços de tradução, servidores de proxy, suporte a clip-art e Visualizadores Online são descritos em [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
@@ -129,7 +130,9 @@ Para aplicar atualizações de software a um farm do Servidor do Office Web Apps
     
     3.  Abra o prompt do Windows PowerShell como administrador e execute o seguinte comando. O parâmetro **–MachineToJoin** adiciona o servidor atual a um farm atual do Servidor do Office Web Apps. Neste caso, o objetivo é adicionar o servidor ao farm atualizado do Servidor do Office Web Apps. Para isso, use o nome do computador de um dos servidores no farm atualizado do Servidor do Office Web Apps.
         
+        ```PowerShell
             New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+        ```
 
 ## Consulte também
 
