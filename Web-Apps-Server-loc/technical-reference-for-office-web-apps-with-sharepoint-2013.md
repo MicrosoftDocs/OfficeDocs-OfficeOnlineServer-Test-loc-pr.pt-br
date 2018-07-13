@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Aplica-se a:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Aplica-se a:</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Tópico modificado em:**2016-12-16_
+_<strong>Tópico modificado em:</strong>2016-12-16_
 
 **Resumo:** encontre artigos de referência técnica, como ajuda para os cmdlets do Windows PowerShell SPWOPI, para Office Web Apps.
 
