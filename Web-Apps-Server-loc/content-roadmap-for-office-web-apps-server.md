@@ -27,19 +27,9 @@ Servidor do Office Web Apps é um novo produto Office server que entrega versõe
 
 Se você é um profissional de TI que está procurando informações sobre Aplicativo Web do Outlook, consulte [O que há de novo para o Outlook Web App no Exchange 2013](http://go.microsoft.com/fwlink/?linkid=282325).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219437.important(Office.15).gif" title="Importante" alt="Importante" />Importante</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Este artigo é direcionado aos administradores que implantam e gerenciam o Servidor do Office Web Apps para suas organizações.<br />
-<strong>Precisa de ajuda com o Office Web Apps em sua área de trabalho ou dispositivo móvel?</strong> Você pode estar procurando iniciar o <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">com o Office Web Apps</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Este artigo é direcionado aos administradores que implantam e gerenciam o Servidor do Office Web Apps para suas organizações.<br />
+<strong>Precisa de ajuda com o Office Web Apps em sua área de trabalho ou dispositivo móvel?</strong> Você pode estar procurando iniciar o <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">com o Office Web Apps</a>.
 
 
 A tabela a segir descreve os recursos disponíveis aos profissionais de TI que implantam e gerenciam o Servidor do Office Web Apps.

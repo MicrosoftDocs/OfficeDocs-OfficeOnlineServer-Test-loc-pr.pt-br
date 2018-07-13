@@ -31,50 +31,20 @@ Por padrão, depois que o SharePoint 2013 for configurado para usar o Servidor d
 
 Em geral, o recurso OpenInClient substitui quaisquer associações WOPI definidas entre o SharePoint 2013 e o Servidor do Office Web Apps. Em outras palavras, se o recurso OpenInClient de uma biblioteca ou conjunto de sites do SharePoint 2013 estiver habilitado, os documentos serão abertos no aplicativo cliente, mesmo se o servidor do SharePoint 2013 tiver sido configurado para utilizar o Servidor do Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A configuração do comportamento de abertura padrão de documentos habilitados para navegador não afetará se os usuários podem usar os recursos <strong>Check-out</strong> e <strong>Enviar para</strong> no SharePoint 2013 para baixar documentos. Para obter informações sobre como configurar as permissões de checkout, de download e de exibição no SharePoint 2013, consulte <a href="https://technet.microsoft.com/pt-br/library/cc262939(v=office.15)">Planejamento de permissões para sites e conteúdo no SharePoint 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> A configuração do comportamento de abertura padrão de documentos habilitados para navegador não afetará se os usuários podem usar os recursos <strong>Check-out</strong> e <strong>Enviar para</strong> no SharePoint 2013 para baixar documentos. Para obter informações sobre como configurar as permissões de checkout, de download e de exibição no SharePoint 2013, consulte <a href="https://technet.microsoft.com/pt-br/library/cc262939(v=office.15)">Planejamento de permissões para sites e conteúdo no SharePoint 2013</a>.
 
 
 ## Definir o recurso OpenInClient para uma biblioteca de documentos ou coleção de sites
 
 Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no SharePoint 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alguns destes procedimentos usam o Shell de Gerenciamento do SharePoint 2013 para executar cmdlets do SharePoint. Se você optar por usar o console do Windows PowerShell, deverá adicionar o snap-in Microsoft.SharePoint.PowerShell usando o cmdlet <strong>Add-PSSnapin</strong>. Para obter mais informações sobre como usar o Windows PowerShell com o SharePoint 2013, consulte <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Usar o Windows Powershell para administrar o SharePoint 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Alguns destes procedimentos usam o Shell de Gerenciamento do SharePoint 2013 para executar cmdlets do SharePoint. Se você optar por usar o console do Windows PowerShell, deverá adicionar o snap-in Microsoft.SharePoint.PowerShell usando o cmdlet <strong>Add-PSSnapin</strong>. Para obter mais informações sobre como usar o Windows PowerShell com o SharePoint 2013, consulte <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Usar o Windows Powershell para administrar o SharePoint 2013</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Você pode completar tarefas em todos Pacotes do Office 2013 usando um mouse, atalhos de teclado ou toque. Para obter informações sobre como usar atalhos de teclado e toque com produtos e serviços do Office, consulte <a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Atalhos de teclado</a> e <a href="http://go.microsoft.com/fwlink/p/?linkid=253163">Guia de Toque do Office</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Você pode completar tarefas em todos Pacotes do Office 2013 usando um mouse, atalhos de teclado ou toque. Para obter informações sobre como usar atalhos de teclado e toque com produtos e serviços do Office, consulte <a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Atalhos de teclado</a> e <a href="http://go.microsoft.com/fwlink/p/?linkid=253163">Guia de Toque do Office</a>.
 
 
  **Definir o recurso OpenInClient para conjuntos de sites**
@@ -99,18 +69,8 @@ Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no Sh
     
     Um administrador pode usar o cmdlet **Add-SPShellAdmin** para conceder permissões para usar cmdlets do SharePoint 2013.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Se você não possui permissões, entre em contato com seu administrador de Configuração ou com o administrador do SQL Server para solicitá-las. Para obter informações adicionais sobre permissões do Windows PowerShell, consulte <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissões</a> e <a href="https://technet.microsoft.com/pt-br/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Se você não possui permissões, entre em contato com seu administrador de Configuração ou com o administrador do SQL Server para solicitá-las. Para obter informações adicionais sobre permissões do Windows PowerShell, consulte <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissões</a> e <a href="https://technet.microsoft.com/pt-br/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.
 
 
 2.  Abra um Shell de Gerenciamento do SharePoint 2013 elevado:
@@ -192,18 +152,8 @@ Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no Sh
     
     Um administrador pode usar o cmdlet **Add-SPShellAdmin** para conceder permissões para usar cmdlets do SharePoint 2013.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Se você não possuir permissões, entre em contato com seu administrador de Configuração ou com o administrador do SQL Server para solicitá-las. Para obter informações adicionais sobre permissões do Windows PowerShell, consulte <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissões</a> e <a href="https://technet.microsoft.com/pt-br/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Se você não possuir permissões, entre em contato com seu administrador de Configuração ou com o administrador do SQL Server para solicitá-las. Para obter informações adicionais sobre permissões do Windows PowerShell, consulte <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissões</a> e <a href="https://technet.microsoft.com/pt-br/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.
 
 
 2.  Abra um Shell de Gerenciamento do SharePoint 2013 elevado:

@@ -21,19 +21,10 @@ ms.translationtype: HT
 
 Depois do lançamento de uma nova versão do Servidor do Office Web Apps, a Microsoft disponibiliza uma série de atualizações de software para ajudar a aumentar a segurança, o desempenho e a confiabilidade dos servidores. Este artigo descreve como aplicar atualizações de software a servidores individuais em um farm do Servidor do Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219437.important(Office.15).gif" title="Importante" alt="Importante" />Importante</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Este artigo faz parte do <a href="content-roadmap-for-office-web-apps-server.md">Mapa de conteúdo para o Servidor do Office Web Apps</a>. Use o mapa como um ponto inicial para acessar artigos, downloads e vídeos que ajudam a implantar e gerenciar o Servidor do Office Web Apps.<br />
-<strong>Deseja obter ajuda com o Office Web Apps em seu desktop ou dispositivo móvel?</strong> É possível encontrar estas informações pesquisando por &quot;Office Web Apps&quot; no <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Este artigo faz parte do <a href="content-roadmap-for-office-web-apps-server.md">Mapa de conteúdo para o Servidor do Office Web Apps</a>. Use o mapa como um ponto inicial para acessar artigos, downloads e vídeos que ajudam a implantar e gerenciar o Servidor do Office Web Apps.<br />
+<strong>Deseja obter ajuda com o Office Web Apps em seu desktop ou dispositivo móvel?</strong> É possível encontrar estas informações pesquisando por &quot;Office Web Apps&quot; no <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
+
 
 > [!WARNING]
 > A aplicação de atualizações do Servidor do Office Web Apps usando o processo de atualizações automáticas não é compatível com o Servidor do Office Web Apps por que as atualizações do Servidor do Office Web Apps devem ser aplicadas de forma específica, conforme descrito neste artigo. Se as atualizações do Servidor do Office Web Apps forem aplicadas automaticamente, os usuários poderão não conseguir exibir ou editar documentos no Office Web Apps. Caso isto ocorra, é necessário reestruturar seu farm do Servidor do Office Web Apps. Para reestruturar um farm, é necessário remover o Servidor do Office Web Apps do farm usando o <A href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</A>, desinstalar o Servidor do Office Web Apps por meio do Adicionar ou remover programas, para depois reinstalar o Servidor do Office Web Apps seguindo as etapas descritas no <A href="deploy-office-web-apps-server.md">Implantar o Servidor do Office Web Apps</A>. Depois de reinstalá-lo, aplique a atualização seguindo os passos descritos neste artigo.<BR>É importante ler com atenção as diretrizes constantes em <A href="plan-office-web-apps-server.md">Planejamento de atualizações para o Office Web Apps Server</A> para estabelecer um processo de atualização para o farm do Servidor do Office Web Apps.
@@ -46,25 +37,12 @@ As atualizações lançadas para o Servidor do Office Web Apps atualizarão o Se
 
 Como parte do processo de atualização, será necessário recriar o farm do Servidor do Office Web Apps. Para preparar a recriação do farm do Servidor do Office Web Apps, reveja as propriedades atuais do seu farm do Servidor do Office Web Apps executando o cmdlet **Get-OfficeWebAppFarm** do Windows PowerShell e reveja os parâmetros para [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). Os parâmetros usados para **New-OfficeWebAppsFarm** devem ser os mesmos usados na configuração inicial do farm do Servidor do Office Web Apps.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Você pode executar as tarefas deste artigo usando um mouse, atalhos de teclado ou toque. Para obter mais informações, consulte os seguintes recursos:
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Atalhos de teclado</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249151">Toque</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Você pode executar as tarefas deste artigo usando um mouse, atalhos de teclado ou toque. Para obter mais informações, consulte os seguintes recursos:
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Atalhos de teclado</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249151">Toque</a></p></li>
+> </ul>
 
 ## Aplicação de atualizações de software a um farm do Office Web Apps Server com um único servidor
 

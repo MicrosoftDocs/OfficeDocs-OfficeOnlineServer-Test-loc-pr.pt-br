@@ -68,19 +68,8 @@ Usuários que trabalham com arquivos do Office em bibliotecas de documentos no S
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PowerPoint A transmissão não está mais disponível no SharePoint 2013. Ela ainda está disponível através do OneDrive e do Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> PowerPoint A transmissão não está mais disponível no SharePoint 2013. Ela ainda está disponível através do OneDrive e do Lync Server 2013.
 
 ### Novos recursos de instalação e licenciamento fornecidos aos profissionais de TI
 

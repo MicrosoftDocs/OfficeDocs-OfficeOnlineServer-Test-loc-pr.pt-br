@@ -51,19 +51,8 @@ Certifique-se de considerar estes recursos antes de começar:
 
   - Por padrão, o Servidor do Office Web Apps permite visualizar arquivos do Office, mas não editá-los. Para editar arquivos, você precisará de uma licença de edição, sobre a qual você pode saber mais em [Planejar o Office Web Apps (usado com os produtos do SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) e [Configurar o licenciamento no SharePoint Server 2013](https://technet.microsoft.com/pt-br/library/jj219627\(v=office.15\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>É possível realizar tarefas no Pacotes do Office 2013 usando um mouse, atalhos de teclado ou toque. Confira mais informações sobre como usar atalhos de teclado e toque em produtos e serviços do Office em <a href="https://go.microsoft.com/fwlink/p/?linkid=249150">Atalhos de teclado</a> e <a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Guia de Toques do Office</a>.</td>
-</tr>
-</tbody>
-</table>
-
+> [!NOTE]
+> É possível realizar tarefas no Pacotes do Office 2013 usando um mouse, atalhos de teclado ou toque. Confira mais informações sobre como usar atalhos de teclado e toque em produtos e serviços do Office em <a href="https://go.microsoft.com/fwlink/p/?linkid=249150">Atalhos de teclado</a> e <a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Guia de Toques do Office</a>.
 
 ## Prepare os servidores para executar o Servidor do Office Web Apps
 
@@ -149,34 +138,14 @@ Realize estas etapas em qualquer servidor que executará o Servidor do Office We
 
 6.  Baixe e instale o [Office Web Apps Server SP1](https://go.microsoft.com/fwlink/p/?linkid=510097) (recomendado para o Windows Server 2012 e o Windows Server 2008 R2 SP1. Necessário para o Windows Server 2012 R2.)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Se você quiser aplicar o Servidor do Office Web Apps SP1 mais tarde, siga as instruções em <a href="apply-software-updates-to-office-web-apps-server.md">Aplicar atualizações de software ao Servidor do Office Web Apps</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Se você quiser aplicar o Servidor do Office Web Apps SP1 mais tarde, siga as instruções em <a href="apply-software-updates-to-office-web-apps-server.md">Aplicar atualizações de software ao Servidor do Office Web Apps</a>.
 
 
 7.  Confira as atualizações mais recentes do Servidor do Office Web Apps na lista disponível no [Centro de atualizações do TechNet para Office, servidores do Office e produtos relacionados](https://go.microsoft.com/fwlink/p/?linkid=280271).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Se você não tiver instalado o Office Web Apps Server SP1, aplique a <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Se você não tiver instalado o Office Web Apps Server SP1, aplique a <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>.
 
 
 ## Etapa 3: Instalar pacotes de idiomas do Servidor do Office Web Apps
@@ -194,25 +163,11 @@ Para instalar os pacotes de idiomas, siga estas etapas.
 
 4.  Quando a instalação do Servidor do Office Web Apps estiver concluída, selecione **Fechar**.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219437.important(Office.15).gif" title="Importante" alt="Importante" />Importante</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Para instalar pacotes de idiomas depois da criação do farm do Servidor do Office Web Apps, você deve remover o servidor do farm, instalar o pacote de idiomas nele e adicioná-lo de volta ao farm.</p></li>
-<li><p>Para o pacote de idiomas funcionar corretamente, será necessário instalar isso em todos os servidores no farm.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> <ul>
+> <li><p>Para instalar pacotes de idiomas depois da criação do farm do Servidor do Office Web Apps, você deve remover o servidor do farm, instalar o pacote de idiomas nele e adicioná-lo de volta ao farm.</p></li>
+> <li><p>Para o pacote de idiomas funcionar corretamente, será necessário instalar isso em todos os servidores no farm.</p></li>
+> </ul>
 
 ## Implantar um farm de servidores do Office Web Apps
 
@@ -334,18 +289,8 @@ urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><r
 default="true" ext="xls"/><action name="view" 
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dependendo das configurações de segurança de seu navegador da Web, talvez você veja uma mensagem que solicita a seleção de <strong>Mostrar todo conteúdo</strong> antes de o conteúdo do arquivo XML de descoberta ser exibido.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dependendo das configurações de segurança de seu navegador da Web, talvez você veja uma mensagem que solicita a seleção de <strong>Mostrar todo conteúdo</strong> antes de o conteúdo do arquivo XML de descoberta ser exibido.
 
 
 ## Etapa 3: configurar o host
@@ -414,18 +359,8 @@ Se o Servidor do Office Web Apps funcionar conforme o esperado, você deverá ve
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Dependendo das configurações de segurança de seu navegador da Web, talvez você veja uma mensagem que solicita a seleção de <strong>Mostrar todo conteúdo</strong> antes de o conteúdo do arquivo XML de descoberta ser exibido.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Dependendo das configurações de segurança de seu navegador da Web, talvez você veja uma mensagem que solicita a seleção de <strong>Mostrar todo conteúdo</strong> antes de o conteúdo do arquivo XML de descoberta ser exibido.
 
 ## Etapa 4: configurar o host
 

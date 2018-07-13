@@ -29,18 +29,8 @@ Servidor do Office Web Apps entrega versões dos aplicativos do Office com base 
 
   - [Implantando o Servidor do Office Web Apps e o Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Produtos do SharePoint 2010 não pode ser um host para Servidor do Office Web Apps. Servidor do Office Web Apps não é suportado por SharePoint Foundation 2010 ou SharePoint Server 2010. Servidor do Office Web Apps também não é suportado pelo Exchange Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Produtos do SharePoint 2010 não pode ser um host para Servidor do Office Web Apps. Servidor do Office Web Apps não é suportado por SharePoint Foundation 2010 ou SharePoint Server 2010. Servidor do Office Web Apps também não é suportado pelo Exchange Server 2013.
 
 
 Neste artigo:
@@ -103,18 +93,8 @@ Em primeiro lugar, aqui estão alguns exemplos do que você NÃO deve fazer ao i
 
 Agora para os itens que você PRECISA instalar. Consulte a tabela a seguir, para obter os detalhes.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219437.important(Office.15).gif" title="Importante" alt="Importante" />Importante</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Servidor do Office Web Apps só está disponível para download a partir do <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. Para baixar Servidor do Office Web Apps, você deve ter uma licença, sob um contrato de licenciamento por Volume, para Office Professional Plus 2013, Office Standard 2013 ou Office para Mac 2011. O download está localizado nesses produtos Office no portal VLSC.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Servidor do Office Web Apps só está disponível para download a partir do <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. Para baixar Servidor do Office Web Apps, você deve ter uma licença, sob um contrato de licenciamento por Volume, para Office Professional Plus 2013, Office Standard 2013 ou Office para Mac 2011. O download está localizado nesses produtos Office no portal VLSC.
 
 
 ### Downloads, funções de servidor e recursos necessários para o Servidor do Office Web Apps
@@ -384,18 +364,8 @@ O certificado deve ser importado da seguinte maneira:
 
   - **Para farms com balanceamento de carga**   Se você estiver descarregando o SSL, o certificado deverá ser importado no balanceador de carga de hardware. Se você não estiver descarregando o SSL, será necessário instalar o certificado em cada servidor no farm do Servidor do Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Não use certificados autoassinados, exceto em ambientes de teste não críticos.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Não use certificados autoassinados, exceto em ambientes de teste não críticos.
 
 
 Para obter mais informações sobre certificados, consulte [como obter um certificado SSL](https://go.microsoft.com/fwlink/p/?linkid=269700).
@@ -422,18 +392,8 @@ A Lista de Permissões é um recurso de segurança que impede hosts indesejados 
 
 É possível adicionar domínios à Lista de Permissões após a criação do farm do Servidor do Office Web Apps. Para saber como adicionar domínios à Lista de Permissões, consulte [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219437.important(Office.15).gif" title="Importante" alt="Importante" />Importante</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Se você não adicionar domínios à Lista de Permissões, o Servidor do Office Web Apps permitirá solicitações de arquivo aos hosts em qualquer domínio. Não deixe essa lista em branco se seu farm do Servidor do Office Web Apps puder ser acessado da Internet. Caso contrário, qualquer pessoa poderá usar seu farm do Servidor do Office Web Apps para exibir e editar o conteúdo.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Se você não adicionar domínios à Lista de Permissões, o Servidor do Office Web Apps permitirá solicitações de arquivo aos hosts em qualquer domínio. Não deixe essa lista em branco se seu farm do Servidor do Office Web Apps puder ser acessado da Internet. Caso contrário, qualquer pessoa poderá usar seu farm do Servidor do Office Web Apps para exibir e editar o conteúdo.
 
 
 ## Planejando os Visualizadores Online com o Servidor do Office Web Apps
