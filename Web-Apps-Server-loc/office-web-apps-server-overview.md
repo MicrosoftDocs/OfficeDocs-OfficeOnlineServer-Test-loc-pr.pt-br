@@ -23,19 +23,9 @@ _**Tópico modificado em:**2017-05-26_
 
 Servidor do Office Web Apps é um novo produto de servidor de Office que fornece versões baseadas em navegador do Word, PowerPoint, Excel e OneNote. Um único farm do Office Web Apps Server pode oferecer suporte a usuários que acessam arquivos Office por meio de SharePoint 2013, Lync Server 2013, pastas compartilhadas e sites. O novo modelo de implantação autônoma significa que você pode gerenciar atualizações ao seu farm do Office Web Apps Server independentemente de outros produtos de servidor Office que são implantados em sua organização.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219437.important(Office.15).gif" title="Importante" alt="Importante" />Importante</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Este artigo faz parte do <a href="content-roadmap-for-office-web-apps-server.md">Mapa de conteúdo para o Servidor do Office Web Apps</a>. Use o mapa como um ponto inicial para acessar artigos, downloads e vídeos que ajudam a implantar e gerenciar o Servidor do Office Web Apps.<br />
-<strong>Deseja obter ajuda com o Office Web Apps em seu desktop ou dispositivo móvel?</strong> É possível encontrar estas informações pesquisando por &quot;Office Web Apps&quot; no <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Este artigo faz parte do <a href="content-roadmap-for-office-web-apps-server.md">Mapa de conteúdo para o Servidor do Office Web Apps</a>. Use o mapa como um ponto inicial para acessar artigos, downloads e vídeos que ajudam a implantar e gerenciar o Servidor do Office Web Apps.<br />
+<strong>Deseja obter ajuda com o Office Web Apps em seu desktop ou dispositivo móvel?</strong> É possível encontrar estas informações pesquisando por &quot;Office Web Apps&quot; no <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
 Neste artigo:
@@ -70,18 +60,8 @@ A ilustração a seguir resume os recursos de exibição e edição do Office We
 
 ![Um gráfico que resume as capacidades de exibição e edição do Office Web Apps em diferentes tipos de dispositivo. Ele destaca os que são otimizados para telas sensíveis ao toque.](images/JJ219437.8bf76669-f511-4e02-8ed3-d658e9e746f0(Office.15).gif "Um gráfico que resume as capacidades de exibição e edição do Office Web Apps em diferentes tipos de dispositivo. Ele destaca os que são otimizados para telas sensíveis ao toque.")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A Transmissão do PowerPoint foi removida do SharePoint 2013. Está disponível por meio do OneDrive e do Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> A Transmissão do PowerPoint foi removida do SharePoint 2013. Está disponível por meio do OneDrive e do Lync Server 2013.
 
 
 Para obter mais informações sobre o que há de novo no Office Web Apps, consulte [Como o Office Web Apps funciona no local com o SharePoint 2013](how-office-web-apps-work-on-premises-with-sharepoint-2013.md).
@@ -114,18 +94,8 @@ O Servidor do Office Web Apps fornece uma página no endereço http://*Nomedoser
 
 É possível encontrar mais sobre os Visualizadores Online em [Planning for Online Viewers with Office Web Apps Server](plan-office-web-apps-server.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219439.note(Office.15).gif" title="Observação" alt="Observação" />Observação</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A Microsoft hospeda uma versão voltada apenas para Internet de Criar URL em <a href="http://go.microsoft.com/fwlink/?linkid=256548%26clcid=0x416">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> A Microsoft hospeda uma versão voltada apenas para Internet de Criar URL em <a href="http://go.microsoft.com/fwlink/?linkid=256548%26clcid=0x416">Office.com</a>.
 
 
 ## Consulte também
