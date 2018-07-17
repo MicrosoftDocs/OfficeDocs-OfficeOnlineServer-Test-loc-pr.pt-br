@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Aplica-se a:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Aplica-se a:</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Tópico modificado em:**2017-05-26_
+_<strong>Tópico modificado em:</strong>2017-05-26_
 
 **Resumo:** Contém artigos que lhe ajudam a aprender como implantar e configurar o Office Web Apps para SharePoint 2013 local.
 
