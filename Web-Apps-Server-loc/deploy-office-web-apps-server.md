@@ -378,7 +378,8 @@ Se recursos do .NET Framework 3.5 forem instalados e depois removidos, você pod
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-
+```
+```PowerShell
     iisreset /restart /noforce
 ```
 
