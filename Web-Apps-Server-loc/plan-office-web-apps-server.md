@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Aplica-se a:**Office Web Apps Server_
+_<strong>Aplica-se a:</strong>Office Web Apps Server_
 
-_**Tópico modificado em:**2017-10-10_
+_<strong>Tópico modificado em:</strong>2017-10-10_
 
 **Resumo:** descreve os requisitos e os pré-requisitos do Servidor do Office Web Apps, incluindo HTTPS, certificados, virtualização, balanceamento de carga, topologias e segurança.
 

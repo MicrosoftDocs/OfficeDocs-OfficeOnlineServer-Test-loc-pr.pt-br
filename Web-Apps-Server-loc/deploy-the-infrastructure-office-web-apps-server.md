@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Aplica-se a:**Office Web Apps Server_
+_<strong>Aplica-se a:</strong>Office Web Apps Server_
 
-_**Tópico modificado em:**2016-12-16_
+_<strong>Tópico modificado em:</strong>2016-12-16_
 
 **Resumo:** contém artigos sobre o Servidor do Office Web Apps e como ele oferece funcionalidade dos Office Web Apps aos hosts.
 
