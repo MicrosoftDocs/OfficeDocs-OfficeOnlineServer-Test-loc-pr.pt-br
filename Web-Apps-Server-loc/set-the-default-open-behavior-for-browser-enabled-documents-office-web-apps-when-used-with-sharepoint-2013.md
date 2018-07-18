@@ -100,9 +100,9 @@ Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no Sh
         ```PowerShell
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
         ```
-        ```
+        
         onde *\<SiteCollURL\>* é a URL do conjunto de sites.
-        ```    
+        
       - Para habilitar o recurso OpenInClient para todos os conjuntos de sites (para abrir documentos no aplicativo cliente), digite este comando:
 
         ```PowerShell  
@@ -113,9 +113,9 @@ Utilize um dos seguintes procedimentos para definir o recurso OpenInClient no Sh
         ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
         ```
-        ```  
+        
         onde *\<SiteCollURL\>* é a URL do conjunto de sites.
-        ```    
+        
       - Para desabilitar o recurso OpenInClient para todos os conjuntos de sites (para abrir documentos no navegador), digite este comando:
       
         ```PowerShell
